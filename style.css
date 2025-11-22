@@ -169,6 +169,54 @@ h2 {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    transition: all 0.1s;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    box-shadow: var(--btn-shadow);
+}
+
+.primary-btn:active {
+    box-shadow: var(--btn-active-shadow);
+    transform: translateY(4px);
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    box-shadow: 0 6px 0 #009ecb;
+}
+
+.secondary-btn:active {
+    box-shadow: 0 2px 0 #009ecb;
+    transform: translateY(4px);
+}
+
+.icon-btn {
+    background: var(--card-bg);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, background-color 0.2s;
+    color: var(--text-color);
+}
+
+.icon-btn:hover {
+    transform: scale(1.1);
+    background: #fff;
+}
+
+.icon-btn:active {
+    transform: scale(0.95);
 }
 
 /* Game Screen Layout */
